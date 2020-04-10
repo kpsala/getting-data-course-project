@@ -1,12 +1,8 @@
 #codebook
 
-Here is some code
+## Tidy data from `run_analysis.R`
 
-
-```
-x <- sin(4)
-```
-
+The tidy, long-format data set created by `run_analysis.R` takes the following structure:
 
 ```
 > head(df.filter)
@@ -20,3 +16,19 @@ x <- sin(4)
 5         1          5 STANDING train   tBodyAcc-std()-Y  -0.983 
 6         1          5 STANDING train   tBodyAcc-std()-Z  -0.914 
 ```
+
+Column descriptions:
+subjectID - The indentifier of the subject who carried out the experiment (from subject_train.txt)
+activityID - The numeric coding of the activity
+activity - The activity label (from activity_labels.txt)
+dataset - To indicate which data set (train or test) the data originated
+feature - The feature (measurement)
+value - The value of feature
+
+For definitions of the features, readers are directed to the original datasets readme which is attached in this repo
+
+## Tidy, averaged data set
+
+
+The new data frame created from step 5 is a tidy data set with the average of each varible for each activity.
+
