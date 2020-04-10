@@ -36,3 +36,19 @@ value - The value of feature
 
 The new data frame created from step 5 is a tidy data set with the average of each varible for each activity.
 
+```
+> head(df.grouped)
+# A tibble: 6 x 5
+# Groups:   subjectID, activity [1]
+  subjectID activity feature             mean   std
+      <int> <fct>    <chr>              <dbl> <dbl>
+1         1 LAYING   fBodyAcc-mean()-X -0.939 0.104
+2         1 LAYING   fBodyAcc-mean()-Y -0.867 0.270
+3         1 LAYING   fBodyAcc-mean()-Z -0.883 0.200
+4         1 LAYING   fBodyAcc-std()-X  -0.924 0.130
+5         1 LAYING   fBodyAcc-std()-Y  -0.834 0.340
+6         1 LAYING   fBodyAcc-std()-Z  -0.813 0.309
+```
+
+The column headings are the same as before. The data has been grouped according to ``dplyr::group_by(subjectID, activity, feature)`` and the mean and standard deviation are reported from the value column.
+
