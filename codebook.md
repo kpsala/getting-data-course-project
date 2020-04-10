@@ -2,7 +2,7 @@
 
 ## Tidy data from `run_analysis.R`
 
-The tidy, long-format data set created by `run_analysis.R` takes the following structure. For definitions of the features, readers are directed to the original datasets readme which is attached in this repo
+The tidy, long-format data set created by `run_analysis.R` takes the following structure. For definitions of the features, readers are directed to the original datasets codebook (README) which is attached in this repo.
 
 ```
 > head(df.filter)
