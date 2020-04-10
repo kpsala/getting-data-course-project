@@ -2,6 +2,12 @@
 
 Here is some code
 
+
+```
+x <- sin(4)
+```
+
+
 ```
 > head(df.filter)
 # A tibble: 6 x 6
