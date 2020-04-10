@@ -2,7 +2,7 @@
 
 ## Tidy data from `run_analysis.R`
 
-The tidy, long-format data set created by `run_analysis.R` takes the following structure:
+The tidy, long-format data set created by `run_analysis.R` takes the following structure. For definitions of the features, readers are directed to the original datasets readme which is attached in this repo
 
 ```
 > head(df.filter)
@@ -19,13 +19,17 @@ The tidy, long-format data set created by `run_analysis.R` takes the following s
 
 Column descriptions:
 subjectID - The indentifier of the subject who carried out the experiment (from subject_train.txt)
+
 activityID - The numeric coding of the activity
+
 activity - The activity label (from activity_labels.txt)
+
 dataset - To indicate which data set (train or test) the data originated
+
 feature - The feature (measurement)
+
 value - The value of feature
 
-For definitions of the features, readers are directed to the original datasets readme which is attached in this repo
 
 ## Tidy, averaged data set
 
