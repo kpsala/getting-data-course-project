@@ -39,7 +39,6 @@ The new data frame created from step 5 is a tidy data set with the average of ea
 ```
 > head(df.grouped)
 # A tibble: 6 x 5
-# Groups:   subjectID, activity [1]
   subjectID activity feature             mean   std
       <int> <fct>    <chr>              <dbl> <dbl>
 1         1 LAYING   fBodyAcc-mean()-X -0.939 0.104
