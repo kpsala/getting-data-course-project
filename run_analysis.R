@@ -70,4 +70,4 @@ df.grouped <- df.filter %>%
 
 write_csv(df.grouped, "./tidy data output.csv")
 
-
+write.table(df.grouped, file="./tidy data output.txt", row.name=FALSE)
